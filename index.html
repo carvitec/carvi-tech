@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarVi Tech - Inicio</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <!-- Al hacer clic en el logo regresas a la página principal -->
+        <a href="index.html" class="logo-link">
+            <div class="logo">CarVi Tech</div>
+        </a>
+        <nav>
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="servicios.html">Productos y Servicios</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="sugerencias.html">Sugerencias</a>
+            <a href="pago.html">Realizar Pago</a>
+        </nav>
+        <!-- Icono del carrito presente en la página principal -->
+        <div class="icono-carrito" onclick="toggleCarrito()">
+            🛒 Carrito <span id="contador-carrito">0</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenidos a CarVi Tech</h1>
+        <p>Especialistas en reparación de celulares y venta de accesorios de alta calidad.</p>
+        <a href="servicios.html" class="btn">Ver Productos y Servicios</a>
+    </section>
+
+    <main class="contenedor">
+        <h2>¿Por qué elegir CarVi Tech?</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <!-- Reemplaza "imagenes/reparacion-inicio.jpg" por tu imagen preferida -->
+                <img src="imagenes/reparacion-inicio.jpg" alt="Reparación Rápida" class="imagen-producto">
+                <h3>Reparación Rápida</h3>
+                <p>Solucionamos los problemas de tu equipo con repuestos garantizados y revisión profesional.</p>
+            </div>
+            <div class="tarjeta">
+                <!-- Reemplaza "imagenes/accesorios-inicio.jpg" por tu imagen preferida -->
+                <img src="imagenes/accesorios-inicio.jpg" alt="Los Mejores Accesorios" class="imagen-producto">
+                <h3>Los Mejores Accesorios</h3>
+                <p>Fundas, micas de cristal templado, cargadores, audífonos y más para todas las marcas.</p>
+            </div>
+            <div class="tarjeta">
+                <!-- Reemplaza "imagenes/atencion-inicio.jpg" por tu imagen preferida -->
+                <img src="imagenes/atencion-inicio.jpg" alt="Atención Personalizada" class="imagen-producto">
+                <h3>Atención Personalizada</h3>
+                <p>Te asesoramos para que encuentres la mejor opción de reparación o accesorio para tu teléfono.</p>
+            </div>
+        </div>
+
+        <!-- Acceso rápido a productos destacados -->
+        <h2 style="margin-top: 2.5rem; text-align: center;">Destacados de la semana</h2>
+        <div style="text-align: center; margin-top: 1rem;">
+            <p>Conoce nuestro catálogo completo con precios y opción de compra directa.</p>
+            <a href="servicios.html" class="btn" style="margin-top: 15px;">Ir a la tienda</a>
+        </div>
+    </main>
+
+    <!-- Modal Lateral del Carrito -->
+    <div id="panel-carrito" class="carrito-panel">
+        <div class="carrito-header">
+            <h3>Tu Carrito</h3>
+            <span class="cerrar-btn" onclick="toggleCarrito()">&times;</span>
+        </div>
+        <div id="elementos-carrito" class="carrito-body">
+            <!-- Se llena dinámicamente desde carrito.js -->
+        </div>
+        <div class="carrito-footer">
+            <h4>Total: $<span id="total-carrito">0.00</span></h4>
+            <a href="pago.html" class="btn" style="display:block; text-align:center; margin-top:10px;">Ir a Pagar</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CarVi Tech - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Script del carrito para mantener sincronizados los productos seleccionados -->
+    <script src="carrito.js"></script>
+</body>
+</html>

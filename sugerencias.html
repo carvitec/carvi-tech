@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarVi Tech - Buzón de Sugerencias</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <!-- Al hacer clic en el nombre de la tienda, también regresas al inicio -->
+    <a href="index.html" class="logo-link">
+        <div class="logo">CarVi Tech</div>
+    </a>
+    
+    <nav>
+        <!-- Enlace directo para volver a la página principal -->
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Productos y Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="sugerencias.html">Sugerencias</a>
+        <a href="pago.html">Realizar Pago</a>
+    </nav>
+    
+    <div class="icono-carrito" onclick="toggleCarrito()">
+        🛒 Carrito <span id="contador-carrito">0</span>
+    </div>
+</header>
+
+    <main class="contenedor">
+        <h2>Buzón de Sugerencias</h2>
+        <p>Tu opinión es muy importante para nosotros. Dinos cómo podemos mejorar.</p>
+
+        <form class="formulario">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+
+            <label for="mensaje">Sugerencia o Comentario:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+            <button type="submit" class="btn">Enviar Sugerencia</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarVi Tech - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

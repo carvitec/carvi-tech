@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarVi Tech - Productos y Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <!-- Al hacer clic en el nombre de la tienda, también regresas al inicio -->
+    <a href="index.html" class="logo-link">
+        <div class="logo">CarVi Tech</div>
+    </a>
+    
+    <nav>
+        <!-- Enlace directo para volver a la página principal -->
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Productos y Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="sugerencias.html">Sugerencias</a>
+        <a href="pago.html">Realizar Pago</a>
+    </nav>
+    
+    <div class="icono-carrito" onclick="toggleCarrito()">
+        🛒 Carrito <span id="contador-carrito">0</span>
+    </div>
+</header>
+
+    <main class="contenedor">
+        <h2>Servicios de Reparación</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <!-- Reemplaza "imagenes/pantalla.jpg" por la ruta o enlace de tu imagen -->
+                <img src="cambio.png" alt="Cambio de Pantalla" width="250" height="180" class="imagen-producto">
+                <h3>Cambio de Pantalla</h3>
+                <p>Reemplazo para todas las marcas.</p>
+                <p class="precio">$45.00</p>
+                <button class="btn" onclick="agregarAlCarrito('Cambio de Pantalla', 45.00)">Añadir al Carrito</button>
+            </div>
+            <div class="tarjeta">
+                <!-- Reemplaza "imagenes/bateria.jpg" por la ruta o enlace de tu imagen -->
+                <img src="bateria.png" alt="Cambio de Batería" width="250" height="180" class="imagen-producto">
+                <h3>Cambio de Batería</h3>
+                <p>Baterías de alta capacidad y garantía.</p>
+                <p class="precio">$25.00</p>
+                <button class="btn" onclick="agregarAlCarrito('Cambio de Batería', 25.00)">Añadir al Carrito</button>
+            </div>
+            <div class="tarjeta">
+                <!-- Reemplaza "imagenes/centro-carga.jpg" por la ruta o enlace de tu imagen -->
+                <img src="cargar.png" alt="Centro de carga" width="250" height="180" class="imagen-producto">
+                <h3>Centro de Carga</h3>
+                <p>Reparación y pin de carga.</p>
+                <p class="precio">$20.00</p>
+                <button class="btn" onclick="agregarAlCarrito('Centro de Carga', 20.00)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 2rem;">Accesorios Disponibles</h2>
+        <div class="tarjetas">
+            <div class="tarjeta">
+                <!-- Reemplaza "funda.png" por la ruta o enlace de tu imagen -->
+                <img src="fundas.png" alt="Funda Uso Rudo" width="250" height="180" class="imagen-producto">
+                <h3>Funda Uso Rudo</h3>
+                <p>Protección contra caídas severas.</p>
+                <p class="precio">$12.00</p>
+                <button class="btn" onclick="agregarAlCarrito('Funda Uso Rudo', 12.00)">Añadir al Carrito</button>
+            </div>
+            <div class="tarjeta">
+                <!-- Reemplaza "cargador.png" por la ruta o enlace de tu imagen -->
+                <img src="cargador.png" alt="Cargador Carga Rápida" width="250" height="180" class="imagen-producto">
+                <h3>Cargador Carga Rápida</h3>
+                <p>Incluye cable Tipo C o Lightning.</p>
+                <p class="precio">$15.00</p>
+                <button class="btn" onclick="agregarAlCarrito('Cargador Carga Rápida', 15.00)">Añadir al Carrito</button>
+            </div>
+            <div class="tarjeta">
+                <!-- Reemplaza "imagenes/audifonos.jpg" por la ruta o enlace de tu imagen -->
+                <img src="auricular.png" alt="Audífonos Bluetooth" width="250" height="180"class="imagen-producto">
+                <h3>Audífonos Bluetooth</h3>
+                <p>Inalámbricos con excelente sonido.</p>
+                <p class="precio">$22.00</p>
+                <button class="btn" onclick="agregarAlCarrito('Audífonos Bluetooth', 22.00)">Añadir al Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Lateral del Carrito -->
+    <div id="panel-carrito" class="carrito-panel">
+        <div class="carrito-header">
+            <h3>Tu Carrito</h3>
+            <span class="cerrar-btn" onclick="toggleCarrito()">&times;</span>
+        </div>
+        <div id="elementos-carrito" class="carrito-body">
+            <!-- Se llena dinámicamente con JS -->
+        </div>
+        <div class="carrito-footer">
+            <h4>Total: $<span id="total-carrito">0.00</span></h4>
+            <a href="pago.html" class="btn" style="display:block; text-align:center; margin-top:10px;">Ir a Pagar</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 CarVi Tech - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="carrito.js"></script>
+</body>
+</html>

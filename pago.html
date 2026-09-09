@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarVi Tech - Realizar Pago</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+    <!-- Al hacer clic en el nombre de la tienda, también regresas al inicio -->
+    <a href="index.html" class="logo-link">
+        <div class="logo">CarVi Tech</div>
+    </a>
+    
+    <nav>
+        <!-- Enlace directo para volver a la página principal -->
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Productos y Servicios</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="sugerencias.html">Sugerencias</a>
+        <a href="pago.html">Realizar Pago</a>
+    </nav>
+    
+    <div class="icono-carrito" onclick="toggleCarrito()">
+        🛒 Carrito <span id="contador-carrito">0</span>
+    </div>
+</header>
+
+    <main class="contenedor centro">
+        <h2>Módulo de Pago QR</h2>
+        <p>Escanea el siguiente código QR desde la aplicación de tu banco o billetera móvil para realizar tu pago rápido y seguro.</p>
+
+        <div class="qr-box">
+            <!-- Reemplaza "qr-pago.png" por la ruta de la imagen real de tu QR -->
+            <img src="pagoqr.png" alt="Código QR para Pago" class="img-qr">
+        </div>
+
+        <p class="nota">Una vez realizado el pago, envía tu comprobante por WhatsApp para confirmar tu pedido o reparación.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarVi Tech - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

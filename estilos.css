@@ -1,0 +1,194 @@
+/* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado y Navegación */
+header {
+    background-color: #1a252f;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00d2d3;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav a:hover, nav a.activo {
+    background-color: #00d2d3;
+    color: #1a252f;
+}
+
+/* Banner de Inicio */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://via.placeholder.com/1200x400');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Contenido Principal */
+.contenedor {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+}
+
+.centro {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #1a252f;
+}
+
+/* Tarjetas */
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1 1 calc(30% - 20px);
+    min-width: 250px;
+}
+
+.tarjeta h3 {
+    color: #00a8a8;
+    margin-bottom: 10px;
+}
+
+/* Listas */
+.lista-servicios {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.lista-servicios li {
+    background: white;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-left: 4px solid #00d2d3;
+}
+
+/* Redes Sociales */
+.redes-sociales {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+.btn-red {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.btn-red:hover { opacity: 0.8; }
+.whatsapp { background-color: #25D366; }
+.facebook { background-color: #1877F2; }
+.instagram { background-color: #E4405F; }
+.tiktok { background-color: #000000; }
+
+/* Formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.formulario input, .formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #00d2d3;
+    color: #1a252f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Código QR */
+.qr-box {
+    margin: 20px auto;
+}
+
+.img-qr {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #1a252f;
+    border-radius: 10px;
+}
+
+.nota {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
