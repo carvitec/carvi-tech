@@ -192,3 +192,188 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
 }
+/* =========================================
+   DISEÑO RESPONSIVE PARA CELULARES
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* Encabezado */
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+    }
+
+    /* Menú */
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav a {
+        display: block;
+        margin-left: 0;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Carrito */
+    .icono-carrito {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Banner principal */
+    .hero {
+        padding: 3rem 1rem;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 95%;
+    }
+
+    .hero .btn {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* Contenido */
+    .contenedor {
+        width: 100%;
+        margin: 1.5rem auto;
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* Tarjetas */
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        min-width: 0;
+        padding: 1.2rem;
+    }
+
+    .tarjeta h3 {
+        font-size: 1.2rem;
+    }
+
+    .tarjeta p {
+        line-height: 1.5;
+    }
+
+    /* Imágenes */
+    .imagen-producto {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    /* Botones */
+    .btn {
+        padding: 12px 18px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    /* Formulario */
+    .formulario {
+        width: 100%;
+        padding: 0;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        font-size: 16px;
+    }
+
+    /* Redes sociales */
+    .redes-sociales {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    /* Código QR */
+    .img-qr {
+        width: 200px;
+        height: 200px;
+        max-width: 100%;
+    }
+
+    /* Pie de página */
+    footer {
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+}
+
+
+/* =========================================
+   TELÉFONOS PEQUEÑOS
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .hero {
+        padding: 2.5rem 0.8rem;
+    }
+
+    .hero h1 {
+        font-size: 1.7rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .contenedor {
+        padding: 0 0.8rem;
+    }
+
+    .tarjeta {
+        padding: 1rem;
+    }
+
+    .tarjeta h3 {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .img-qr {
+        width: 180px;
+        height: 180px;
+    }
